@@ -135,18 +135,22 @@ label{
 
 #r1:checked~.slide_controls>label>.radio_imit>.ris1{
     opacity: 1;
+    cursor: auto;
 }
  
 #r2:checked~.slide_controls>label>.radio_imit>.ris2{
     opacity: 1;
+    cursor: auto;
 }
 
 #r3:checked~.slide_controls>label>.radio_imit>.ris3{
     opacity: 1;
+    cursor: auto;
 }
     
 #r4:checked~.slide_controls>label>.radio_imit>.ris4{
     opacity: 1;
+    cursor: auto;
 }
 
 @media (max-width: 500px) {
