@@ -30,7 +30,8 @@
     background-color: var(--bg-color);
     display: flex; 
     overflow: hidden;
-    flex-direction: column;    
+    flex-direction: column;   
+    gap: 2vw; 
 }
 
 .slider_line{
@@ -42,9 +43,6 @@
     width: 25%;
     height: 100%;
     transition: all 1s ease;
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
 }
 
 .slide img{
@@ -60,6 +58,7 @@ p{
     color: var(--main-color);
     align-self: start;
     font-family: var(--ff);
+    font-size: 1.3vw;
 }
 
 
@@ -84,17 +83,11 @@ input[name="radio_slider"]{
     margin-left: -75%;
 }
 
-.slider_text{
-    color:#FFFFFF;
-    display: flex;
-    width: 400%;
-}
-
 .slide_controls{
     display: flex;
     justify-content: flex-end;
-    align-items: start;
-    margin-top: -1.3vw;
+    align-items: center;
+    margin-top: -3.6vw;
     margin-bottom: 3vw;
 }
 
@@ -103,12 +96,14 @@ label{
 	height: 2vw;
     cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .radio_imit{
     padding: 0.3vw;
-	width: 1vw;
-	height: 1vw;
+	width: 1.2vw;
+	height: 1.2vw;
 	border-radius: 50%;
 	background: var(--main-color);
     cursor: pointer;
@@ -122,11 +117,11 @@ label{
 .radio_imit_small {
     margin-top: -0.1vw;
     margin-left: -0.1vw;
-	width: 0.6vw;
-	height: 0.6vw;
+	width: 0.8vw;
+	height: 0.8vw;
 	border-radius: 50%;
 	background: var(--bg-color);
-	transition: 0.3s;
+	transition: 0.5s ease;
     opacity: 0;
 }
 
@@ -153,4 +148,25 @@ label{
 #r4:checked~.slide_controls>label>.radio_imit>.ris4{
     opacity: 1;
 }
+
+@media (max-width: 500px) {
+.img_block{
+    order: 1;
+}
+
+.text_block{
+    order: 99;
+    margin-bottom: 2vw;
+}
+
+.slide_controls{
+    order: 50;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+}
+
 
